@@ -103,4 +103,10 @@ const number = 45;
 //template string
 
 const template = `my name is ${name} i stay at number ${number}`;
-console.log(template);
+//console.log(template);
+
+const convertFirstLetter=(str)=>{
+    return //your answwer
+}
+const param = 'alimazoya';
+console.log(convertFirstLetter(param))
