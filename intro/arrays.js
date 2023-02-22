@@ -129,4 +129,22 @@ const include = arrayfrom.includes(5);
 /* fill(): it is used to fill values into an array */
 
 const fill = Array.from({length:12}).fill(0);
-console.log(fill)
+//console.log(fill)
+
+/* reverse() it is used to reverse an array */
+
+const rev = arrayfrom.reverse();
+// console.log(rev)
+
+
+/* join(): join concatenates two or more array as a string */
+
+const join = arrayfrom.join('');
+console.log(join)
+
+
+/*
+    Assignment:
+    given : 1234 (number);
+    result: 4321 (number)
+*/
