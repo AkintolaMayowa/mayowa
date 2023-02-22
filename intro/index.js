@@ -109,4 +109,11 @@ const convertFirstLetter=(str)=>{
     return //your answwer
 }
 const param = 'alimazoya';
-console.log(convertFirstLetter(param))
+// console.log(convertFirstLetter(param))
+
+function isEven(num){
+    if(num % 2 === 0) console.log("even");
+    else console.log("odd");
+}
+
+isEven(2)
