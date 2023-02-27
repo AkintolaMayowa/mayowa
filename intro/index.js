@@ -117,3 +117,7 @@ function isEven(num){
 }
 
 isEven(2)
+
+function reverseNumber(num){
+    
+}

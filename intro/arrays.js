@@ -140,7 +140,7 @@ const rev = arrayfrom.reverse();
 /* join(): join concatenates two or more array as a string */
 
 const join = arrayfrom.join('');
-console.log(join)
+// console.log(join)
 
 
 /*
@@ -148,3 +148,15 @@ console.log(join)
     given : 1234 (number);
     result: 4321 (number)
 */
+
+
+// let num = 1234
+
+// function reverseNumber(num){
+//     num.toString()
+//     num.split('')
+//     num.reverse()
+//     num.join('')
+//     parseInt(num)
+// }
+// reverseNumber(num);
