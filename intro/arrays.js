@@ -9,11 +9,12 @@ const array = [23, "david", {id: 1, vin:'123ef'}, false, 12]
 
 array[0] // 23
 array[2].id // 1
-//console.log(array[2].id);
+// console.log(array[2].id);
 
 //putting items inside array
 
 array[4] = 'new item';
+// console.log(array)
 
 
 //changing items
@@ -74,32 +75,32 @@ const find = array.find(value=>value === 12);
 
 /* findIndex(): Returns the first index of the element of an array that matches the criteria, */
 const findIndex = array.findIndex(value=>value === 'david')
-//console.log(findIndex)
+// console.log(findIndex)
 
 /* concat(): joins two or more array */
 const array1 = [1,2,3]; const array2 = ['boys', 'girls']
 const concat = array1.concat(array2)
-//console.log(concat)
+// console.log(concat)
 
 /* forEach(): a void function that is triggered for each element in the array */
 
-//const foreach = concat.forEach((value, i, _)=>console.log(`current value ${value}\n`));
+// const foreach = concat.forEach((value, i, _)=>console.log(`current value ${value}\n`));
 //foreach
 
 /* some(): returns and true if some elements match the criteria */
 
 const some = concat.some(value=>typeof value === 'string');
-//console.log(some)
+// console.log(some)
 
 /* reduce(): reduce the array into a single value */
 
 const numbers = [1,2,3,4,5];
 const sum = numbers.reduce((acc, cur, i)=>acc+cur);
-//console.log(sum)
+// console.log(sum)
 
 /* slice(): takes a part of the array, provide the start and end */
 const slice = numbers.slice(0, 2);
-//console.log(slice)
+// console.log(slice)
 
 /* splice(): add, replace, or remove from a provided index */
 
@@ -149,14 +150,21 @@ const join = arrayfrom.join('');
     result: 4321 (number)
 */
 
-
 // let num = 1234
 
 // function reverseNumber(num){
-//     num.toString()
-//     num.split('')
-//     num.reverse()
-//     num.join('')
-//     parseInt(num)
+//     num.toString().split('').reverse().join('')
+//     return parseInt(num)
 // }
 // reverseNumber(num);
+/** 
+ * solution to assignment 
+ * @param {number}
+ * @returns {number}
+ */
+
+// const reverseNum=(num)=>{
+//     let stringArray = num.toString().split('');
+//     return parseInt(stringArray.reverse().join(''));
+// }
+// console.log(reverseNum(1234))
