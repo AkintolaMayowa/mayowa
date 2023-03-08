@@ -82,6 +82,7 @@ fun(10)=>24
 2. write a function that takes in a year and prints the century that year belongs to
 1970=> 20
 
+
 3. write a function that takes in a string and a character and removes all the instance of the character from the string
 ("javascript","a")=>jvscript
 
@@ -119,12 +120,46 @@ fun(10)=>24
 // }
 // console.log(sum(10))
 
-function replaceNum(arrNum, num){
-    arrNum = arrNum.splice()
-    return arrNum;
-}
-console.log(replaceNum([]))
+// function replaceNum(arrNum, num){
+//     arrNum = arrNum.splice()
+//     return arrNum;
+// }
+// console.log(replaceNum([]))
 
 // const months = [1,2,3,5];
 // months.splice(3, 0, 4);
 // console.log(months)
+
+/* 2 century  solution
+
+const centuryFromYear=(year)=>{
+    let century = 1;
+    while(year > 100){
+        century++;
+        year -= 100;
+    }
+    return century;
+}
+console.log(centuryFromYear(1970))
+
+ */
+
+/* 4 replacement */
+
+// const replaceNumInArray=(arr, num)=>{
+//     let index;
+//    for(let i = 0; i < arr.length; i++){
+//     if(arr[i] <= num && arr[i+1] >= num) {
+//         index = i;
+//         break;
+//     }
+//     if(num > arr[arr.length-1]){
+//         index = arr.length-1
+//     }
+//    }
+//     arr.splice(index+1, 0, num);
+//     return arr;
+// }
+ 
+// console.log(replaceNumInArray([1,2,3,5], 6))
+
