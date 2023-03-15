@@ -13,15 +13,15 @@ const obj = {
     likes:["simi", "debby"],
     cities:{country:"Togo", capital:"Lome"},
     travel(){
-        console.log(this.name +" is travelling")
+        // console.log(this.name +" is travelling")
     }
 }
 
 //Add properties
 
-obj.streetName = "Abolore";
-obj.streetNumber = 23;
-obj.func = ()=>console.log("Hello new function");
+// obj.streetName = "Abolore";
+// obj.streetNumber = 23;
+// obj.func = ()=>console.log("Hello new function");
 
 // remove properties
 
@@ -49,7 +49,7 @@ class Objectname {
     age = 27;
 
     travel(){
-        console.log(this.name +" is travlleing");
+        // console.log(this.name +" is travlleing");
     }
 }
 
@@ -70,7 +70,7 @@ class Objectname1 {
         this.age = age;
     }
     travel(){
-        console.log(this.name +" is travlleing");
+        // console.log(this.name +" is travlleing");
     }
 }
 
@@ -157,7 +157,7 @@ Dog.prototype.food = ["meat", "milk"];
 
 //i = key
 for(let i in replica){
-   console.log(replica[i])
+//    console.log(replica[i])
 }
 
 /*
@@ -178,3 +178,69 @@ e.g [1,1,2,2,3,3,2,1,2,2,1,3,5,3,2] => 2
 
 */
 
+
+let arr = [{name: "david", age:30}, {name: "sam", age:25}, {name: "ovis", age:26}, {name: "ken", age:18}, {name: "gbenga", age:20},]
+const findAverageAge = (arr) => {
+    const { length } = arr;
+    return arr.reduce((acc, val) => {
+       return acc + (val.age/length);
+    }, 0);
+ };
+ console.log(findAverageAge(arr));
+
+// function removeItem(arr, age) {
+//     const findItem = arr.findIndex((obj) => obj.age === age);
+
+//     if (findItem > 24)
+// }
+
+class Users {
+    constructor(name, department, id, email){
+    this.name = name;
+    this.department = department;
+    this.id = id;
+    this.email = email;
+  }
+}
+class Admin extends Users{
+    constructor(name, department, id, email){
+        super(name, department, id, email);
+        this.name = name;
+        this.department = department;
+        this.id = id;
+        this.email = email;
+    }
+
+    deleteUser(){
+
+    }
+}
+
+const admin = new Admin()
+// admin.deleteUser()
+
+// console.log(admin)
+
+
+const mostFrequent = (array) => {
+    var count = {};
+    var compare = 0;
+    var numMost;
+
+    for(let i = 0; i < array.length; i++){
+        let num = array[i];
+        // console.log('num:::', num)
+        // console.log('count:::', count)
+        if(count[num] === undefined){
+            count[num] = 1;
+        } else{
+            count[num] = count[num] + 1;
+        }
+        if(count[num] > compare) {
+            compare = count[num];
+            numMost = num;
+        }
+    }
+    return numMost;
+}
+console.log(mostFrequent([1,9,0,0,0,9,9,9,9,77,6,0,0,0,0]))
