@@ -81,3 +81,5 @@ let getAttr =myDiv.getAttribute("id")
 myDiv.style.background = "green";
 
 
+
+

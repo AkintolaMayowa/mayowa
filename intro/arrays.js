@@ -160,3 +160,4 @@ const reverseNum=(num)=>{
     return parseInt(stringArray.reverse().join(''));
 }
 console.log(reverseNum(1234))
+
