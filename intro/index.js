@@ -116,7 +116,7 @@ function isEven(num){
     else console.log("odd");
 }
 
-isEven(2)
+// isEven(2)
 
 function reverseNumber(num){
     

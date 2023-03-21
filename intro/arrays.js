@@ -168,3 +168,9 @@ const join = arrayfrom.join('');
 //     return parseInt(stringArray.reverse().join(''));
 // }
 // console.log(reverseNum(1234))
+
+const reverseNum=(num)=>{
+    let stringArray = num.toString().split('');
+    return parseInt(stringArray.reverse().join(''));
+}
+console.log(reverseNum(1234))
