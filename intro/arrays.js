@@ -99,6 +99,20 @@ const concat = array1.concat(array2)
 
 /* some(): returns and true if some elements match the criteria */
 
+/* map;
+    Return a new array from the original array:
+    map can also be used to print out values from an array
+
+    const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(v=> num * 10;)
+
+*/
+
+/*  
+    Array mutation: changes the original array: splice, pop, push, shift, unshift
+    will not change the original array: filter, map, foreach
+*/
+
 const some = concat.some(value=>typeof value === 'string');
 //console.log(some)
 
@@ -170,6 +184,7 @@ const reverseNum=(num)=>{
     let stringArray = num.toString().split('');
     return parseInt(stringArray.reverse().join(''));
 }
+
 //console.log(reverseNum(1234))
 
 //array mutation
@@ -180,3 +195,7 @@ const reverseNum=(num)=>{
 //methods that will not change the original array 
 
 /* filter, map, forEach*/
+
+console.log(reverseNum(1234))
+
+

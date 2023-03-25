@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<<<<<<< HEAD
     
 </head>
 <body>
@@ -12,5 +13,26 @@
     <input type="text" id="input" onchange="console.log('input changed')">
     <button id="click">Submit</button>
     <script src="script.js"></script>
+=======
+</head>
+<body>
+    <!--To embed js script in HTML, consider this two points: 1. does the page listen to any document event,
+    if yes the put the script inside the body, if no put the script in the head
+    --difference between a class and id
+    id: is unique identifier
+    class: is not a unique identifier but it groups similar items together
+    -->
+    <div id="name">this is an id selector</div>
+    <div class="name" style="color: red;" data-name="mayowa">this is an class selector</div>
+    <p id="name2">
+        <em>still here</em>
+        <span>inner span</span>
+    </div>
+        <span class="name"></span>
+        <div class="input">
+            <input type="text" class="username" onchange="(e)=>getInput(e.target.value)">
+        </div>
+        <script src="html.js"></script>
+>>>>>>> de0da8287ddd230a57df588a79e4f91fe1af4649
 </body>
 </html>

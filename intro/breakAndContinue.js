@@ -23,6 +23,7 @@ for(let i =0; i < array.length; i++){
     The continue statement "jumps over" one iteration in the loop.
 */
 const array = Array.from({length:20}, (v, i)=>v = i+1);
+/*
 
 for(let i =1; i < array.length; i++){
     if(array[i] % 2 === 0){
@@ -40,3 +41,28 @@ Assignment:
 
 
 */
+const arr = Array.from({length:31}, (v, i)=>i+1);
+
+//console.log(arr)
+
+const solution=(array)=>{
+    const except = [5,7, 11];
+    let total = 0;
+
+    for(let i of array){
+        if(i % 2 !== 0){
+            if(!except.includes(i)){
+                console.log(i)
+                total += i;
+                if(total > 21){
+                    return total;
+                }
+            }
+            else{
+                continue
+            }
+        }
+    }
+}
+
+console.log(solution(arr))
