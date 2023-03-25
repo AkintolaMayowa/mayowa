@@ -99,6 +99,12 @@ console.log(names)
 const db = JSON.parse(window.localStorage.getItem("db"));
 console.log(db)
 
+/*
+    Assignment
+
+    use local storage to store the data being added to your table and use map to print them on the table
+*/
+
 
 
 
