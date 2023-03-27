@@ -160,6 +160,7 @@ const join = arrayfrom.join('');
 /** 
  * solution to assignment 
  * @param {number}
+ * @param {number}
  * @returns {number}
  */
 
