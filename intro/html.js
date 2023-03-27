@@ -81,5 +81,30 @@ let getAttr =myDiv.getAttribute("id")
 myDiv.style.background = "green";
 
 
+//local storage is used to persist data in the db of the browser;
+
+//store data
+
+window.localStorage.setItem("names", "mayowa")
+
+const data = [{name:"mayowa", dept:"science"}]
+
+window.localStorage.setItem("db", JSON.stringify(data));
+
+//retrieve items
+
+const names = window.localStorage.getItem("mayowa");
+console.log(names)
+
+const db = JSON.parse(window.localStorage.getItem("db"));
+console.log(db)
+
+/*
+    Assignment
+
+    use local storage to store the data being added to your table and use map to print them on the table
+*/
+
+
 
 

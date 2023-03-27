@@ -58,6 +58,17 @@ array.unshift(12);
 const newArray = array.filter((value, i)=> value !== 12);
 //console.log(newArray)
 
+//map: this lets you change the content of an array, it does not modify the array
+
+const vault = ["gold", "silver", "bronze", 34, 78, 90];
+
+// printing with map
+
+//vault.map((v, i)=>console.log(v, i))
+
+
+console.log(template)
+
 /* indexOf(): Returns the first index of an element in the array, returns -1 if absent */
 
 const index = array.indexOf(13);
@@ -88,6 +99,20 @@ const concat = array1.concat(array2)
 //foreach
 
 /* some(): returns and true if some elements match the criteria */
+
+/* map;
+    Return a new array from the original array:
+    map can also be used to print out values from an array
+
+    const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(v=> num * 10;)
+
+*/
+
+/*  
+    Array mutation: changes the original array: splice, pop, push, shift, unshift
+    will not change the original array: filter, map, foreach
+*/
 
 const some = concat.some(value=>typeof value === 'string');
 // console.log(some)
@@ -141,7 +166,7 @@ const rev = arrayfrom.reverse();
 /* join(): join concatenates two or more array as a string */
 
 const join = arrayfrom.join('');
-// console.log(join)
+console.log(join)
 
 
 /*
@@ -174,4 +199,17 @@ const reverseNum=(num)=>{
     let stringArray = num.toString().split('');
     return parseInt(stringArray.reverse().join(''));
 }
+
+//console.log(reverseNum(1234))
+
+//array mutation
+
+//methods that can mutate an array: array methods that will change the original value of an array;
+/* splice, pop, push, shift, unshift */
+
+//methods that will not change the original array 
+
+/* filter, map, forEach*/
+
 console.log(reverseNum(1234))
+
